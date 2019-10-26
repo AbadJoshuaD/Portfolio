@@ -1,0 +1,142 @@
+$black: #212121;
+$grey: #323232;
+$navy-blue: #23374d;
+$blue: #1089ff;
+
+.projects {
+  padding-top: 4rem;
+  .projects__content {
+    margin: 4rem 0 0 6rem;
+    .projects__title {
+      font-size: 4rem;
+    }
+    .projects__message {
+      margin-top: 1rem;
+      font-size: 1.3rem;
+      font-style: oblique;
+      text-align: center;
+    }
+    .projects__container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin-top: 4rem;
+    }
+  }
+}
+
+.project__card {
+  position: relative;
+  margin-top: 1.5rem;
+  width: 680px;
+  height: 400px;
+  display: flex;
+  background: white;
+  justify-content: center;
+  align-items: center;
+  .project__card__content {
+    position: relative;
+    padding: 20px;
+    .project__number {
+      position: absolute;
+      top: -130px;
+      left: 230px;
+      margin: 0;
+      padding: 0;
+      font-size: 6rem;
+      transition: 0.5s;
+    }
+    .project__img {
+      position: absolute;
+      width: 500px;
+      height: 280px;
+      top: -160px;
+      right: -150px;
+    }
+  }
+}
+.project__card:hover .project__number {
+  top: -180px;
+}
+.project__card:before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: $black;
+  transform: skew(4deg, 4deg);
+  z-index: -1;
+}
+
+.project__link {
+  display: inline-block;
+  position: absolute;
+  text-decoration: none;
+  color: $black;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+  border: 2px solid $black;
+  text-align: center;
+  padding: 0.5rem;
+  .project__link__icon {
+    margin-right: 1rem;
+  }
+}
+.project__link:hover {
+  color: white;
+  background: black;
+}
+.demo {
+  width: 200px;
+  top: 145px;
+  right: 60px;
+}
+.code {
+  width: 200px;
+  top: 145px;
+  left: 60px;
+}
+
+.project__content {
+  margin: 0 3.5rem;
+  .project__title {
+    font-size: 3rem;
+    letter-spacing: 1px;
+  }
+  .project__description {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    text-align: justify;
+  }
+  .project__techstack__title {
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .project__techstack__content {
+    margin-top: 1rem;
+    .proect__techstack__item {
+      border: 1px solid $black;
+      border-radius: 10%;
+      font-size: 1.3rem;
+      margin: 0.5rem;
+      padding: 0.3rem;
+      display: inline;
+    }
+  }
+  .project__technologies__title {
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .project__technologies_content {
+    height: 100px;
+    .project__technologies_list li {
+      display: inline-block;
+    }
+  }
+}

@@ -1,0 +1,59 @@
+$black: #212121;
+$grey: #323232;
+$navy-blue: #23374d;
+$blue: #1089ff;
+
+.home {
+  padding-top: 6rem;
+  .home__content {
+    margin: 4rem 0 0 6rem;
+    width: 60vw;
+    .home__greetings {
+      font-size: 4.5rem;
+      color: $black;
+    }
+    .home__message {
+      margin: 2rem 0 3rem 0;
+      font-size: 2rem;
+      text-align: justify;
+    }
+    .home__btn {
+      position: relative;
+      text-decoration: none;
+      color: $black;
+      font-size: 1.5rem;
+      font-weight: bolder;
+      padding: 0.5rem;
+      margin-right: 3rem;
+      letter-spacing: 2px;
+    }
+    .home__btn:after {
+      display: block;
+      content: "";
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      border-top: 5px solid #000;
+      border-right: 5px solid #000;
+      opacity: 1;
+    }
+    .home__btn-text::before {
+      display: block;
+      content: "";
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      bottom: -10px;
+      left: -10px;
+      border-bottom: 5px solid #000;
+      border-left: 5px solid #000;
+      opacity: 1;
+    }
+    .home__btn:hover {
+      color: white;
+      background: $black;
+    }
+  }
+}
