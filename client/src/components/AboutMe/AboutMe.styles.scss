@@ -1,0 +1,56 @@
+.aboutme {
+  padding-top: 4rem;
+  .aboutme__content {
+    margin: 4rem 0 0 6rem;
+    .aboutme__title {
+      font-size: 4rem;
+    }
+    .aboutme__message {
+      margin-top: 1rem;
+      font-size: 1.3rem;
+      font-style: oblique;
+      text-align: center;
+    }
+    .aboutme__container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .aboutme__accordion__panel {
+        width: 1200px;
+        border-left: 5px solid black;
+        .aboutme_accordion__list {
+          font-size: 3rem;
+          position: relative;
+          .aboutme__accordion__button {
+            display: block;
+            padding: 16px 20px;
+            color: black;
+            .aboutme_accordion_button_icon {
+              padding-right: 5px;
+            }
+            .aboutme__accordion__content {
+              overflow: hidden;
+              display: block;
+              max-height: 0;
+              font-size: 1rem;
+            }
+          }
+        }
+        .aboutme_accordion__list:target .aboutme__accordion__content {
+          max-height: 10em;
+        }
+        .aboutme_accordion__list::before {
+          content: "";
+          position: absolute;
+          top: 28px;
+          left: -22px;
+          width: 30px;
+          height: 30px;
+          background: white;
+          border: 5px solid black;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
