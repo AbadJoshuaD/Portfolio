@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faIdCard } from "@fortawesome/free-solid-svg-icons";
 import Story from "../Story/Story.component";
 import Skills from "../Skills/Skills.component";
-
+import Work from "../Work/Work.component";
 const AboutMe = () => (
   <div className="aboutme">
     <div className="aboutme__content">
@@ -30,6 +30,15 @@ const AboutMe = () => (
               Skills
               <div className="aboutme__accordion__content">
                 <Skills />
+              </div>
+            </a>
+          </li>
+          <span className="aboutme_accordion_circle"></span>
+          <li className="aboutme_accordion__list" id="work">
+            <a href="#work" className="aboutme__accordion__button">
+              Work Experience
+              <div className="aboutme__accordion__content">
+                <Work />
               </div>
             </a>
           </li>
