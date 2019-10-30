@@ -2,6 +2,7 @@ import React from "react";
 import "../AboutMe/AboutMe.styles.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faIdCard } from "@fortawesome/free-solid-svg-icons";
+import Story from "../Story/Story.component";
 
 const AboutMe = () => (
   <div className="aboutme">
@@ -16,27 +17,20 @@ const AboutMe = () => (
           <li className="aboutme_accordion__list item" id="aboutme">
             <span className="aboutme_accordion_circle"></span>
             <a href="#aboutme" className="aboutme__accordion__button btn">
-              <FontAwesomeIcon
-                className="aboutme_accordion_button_icon"
-                icon={faIdCard}
-              />
-              About Me
+              My Story
               <div className="aboutme__accordion__content smenu">
-                <h1>hello</h1>
+                <Story />
               </div>
             </a>
           </li>
           <span className="aboutme_accordion_circle"></span>
           <li className="aboutme_accordion__list" id="skills">
             <a href="#skills" className="aboutme__accordion__button">
-              <FontAwesomeIcon icon={faIdCard} /> Skills
-              <div className="aboutme__accordion__content">
-                <h1>Skills</h1>
-              </div>
+              Skills
+              <div className="aboutme__accordion__content"></div>
             </a>
           </li>
         </div>
-        <div className="aboutme__information"></div>
       </div>
     </div>
   </div>
