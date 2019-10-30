@@ -1,0 +1,27 @@
+.aboutme__skills__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.aboutme__skills__area {
+  display: grid;
+  grid-template-rows: 1fr 300px;
+}
+
+.aboutme__skills__image {
+  display: grid;
+  grid-template-columns: repeat(3, 60px);
+  grid-gap: 2rem;
+}
+
+.aboutme__skills__image__greyscale {
+  filter: grayscale(100%);
+}
+.aboutme__skills__image__greyscale:hover {
+  filter: grayscale(0%);
+}
+
+.aboutme_skills_title {
+  text-align: center;
+}
