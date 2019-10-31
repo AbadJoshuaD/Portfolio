@@ -1,5 +1,6 @@
 import React from "react";
 import "../Work/Work.styles.scss";
+import WorkTimeline from "../WorkTimeline/WorkTimeline.component";
 
 const Work = () => (
   <div className="aboutme__work__container">
@@ -13,22 +14,10 @@ const Work = () => (
         application built with HTML,CSS,JS and jQuery on the front while PHP and
         MySQL on backend.
       </p>
-      <p>Achievements/Task</p>
-      <ul>
-        <li>
-          - Responsible for developing the frontend of the web application.
-        </li>
-        <li>
-          - Used Bootstrap for developing the user interface and responsiveness
-          of the web application.
-        </li>
-        <li>- Computer Setup and Troubleshooting.</li>
-        <li>- Resolving Ticket Issues.</li>
-        <li>- Network Monitoring and Troubleshooting.</li>
-      </ul>
     </div>
     <div className="aboutme__work__timeline">
       <h1>Job Timeline</h1>
+      <WorkTimeline />
     </div>
   </div>
 );

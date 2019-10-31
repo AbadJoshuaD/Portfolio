@@ -1,5 +1,12 @@
 .aboutme__work__container {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 300px 1fr;
   justify-content: space-between;
+}
+
+.aboutme__work__jobsummary {
+  width: 300px;
+}
+.aboutme__work__timeline {
+  text-align: center;
 }
