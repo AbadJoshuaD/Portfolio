@@ -1,10 +1,9 @@
 import React from "react";
 import "../AboutMe/AboutMe.styles.scss";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faIdCard } from "@fortawesome/free-solid-svg-icons";
 import Story from "../Story/Story.component";
 import Skills from "../Skills/Skills.component";
 import Work from "../Work/Work.component";
+import CertAndAward from "../CertAndAward/CertAndAward.component";
 const AboutMe = () => (
   <div className="aboutme">
     <div className="aboutme__content">
@@ -39,6 +38,15 @@ const AboutMe = () => (
               Work Experience
               <div className="aboutme__accordion__content">
                 <Work />
+              </div>
+            </a>
+          </li>
+          <span className="aboutme_accordion_circle"></span>
+          <li className="aboutme_accordion__list" id="certandaward">
+            <a href="#certandaward" className="aboutme__accordion__button">
+              Certifications and Awards
+              <div className="aboutme__accordion__content">
+                <CertAndAward />
               </div>
             </a>
           </li>

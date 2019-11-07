@@ -2,11 +2,19 @@
   display: grid;
   grid-template-columns: 300px 1fr;
   justify-content: space-between;
+  margin-top: 1rem;
 }
 
 .aboutme__work__jobsummary {
-  width: 300px;
+  width: 350px;
 }
 .aboutme__work__timeline {
   text-align: center;
+}
+.aboutme__work__title {
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+.aboutme__work__summary {
+  font-size: 1.2rem;
 }

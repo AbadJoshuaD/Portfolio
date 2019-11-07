@@ -1,9 +1,11 @@
 .aboutme__personalinfo_container {
   display: grid;
   grid-template-columns: 200px 1fr;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
 
   .aboutme__profilepic {
-    margin-top: 1rem;
     width: 10rem;
     height: auto;
     border-radius: 50%;
@@ -20,20 +22,22 @@
       text-align: justify;
       margin-bottom: 1.5rem;
     }
-    .aboutme__quote {
-      display: flex;
-      flex-direction: column;
-      .aboutme__quote__message {
-        font-size: 2rem;
-        text-align: center;
-        font-style: italic;
-      }
-      .aboutme__quote__author {
-        text-align: right;
-        padding: 0.3rem 3rem 0 0;
-        font-size: 2rem;
-        font-weight: bolder;
-      }
-    }
+  }
+}
+
+.aboutme__quote {
+  display: flex;
+  flex-direction: column;
+
+  .aboutme__quote__message {
+    font-size: 2rem;
+    text-align: center;
+    font-style: italic;
+  }
+  .aboutme__quote__author {
+    text-align: right;
+    padding: 0.3rem 3rem 0 0;
+    font-size: 2rem;
+    font-weight: bolder;
   }
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import "../Home/Home.styles.scss";
+import illustration from "../../assets/illustration.png";
 
 const Home = () => (
   <div className="home">
@@ -7,12 +8,12 @@ const Home = () => (
       <h1 className="home__greetings">Hi there! I am Josh</h1>
       <p className="home__message">
         Welcome to my website, I am an aspiring fullstack developer. I am
-        completely hook on learning software development from front to back. I
-        am still in the process of grinding to solidify my fundamental skills
-        and understanding of technologies in web development. Although it was
-        challenging, the journey itself was fun and fruitful of learnings. That
-        is why devoted myself to continous improvement and life long learning in
-        the field of software development.
+        completely hook on learning software development. I am still in the
+        process of grinding to solidify my fundamental skills and understanding
+        of technologies in web development. Although it was challenging, the
+        journey itself was fun and fruitful of learnings. That is why devoted
+        myself to continous improvement and life long learning in the field of
+        software development.
       </p>
       <a href="#" className="home__btn">
         <span></span>
@@ -29,6 +30,7 @@ const Home = () => (
         <span className="home__btn-text">Know more about me</span>
       </a>
     </div>
+    <img src={illustration} alt="" className="home__illustration" />
   </div>
 );
 

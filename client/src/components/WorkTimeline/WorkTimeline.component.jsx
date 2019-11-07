@@ -5,7 +5,7 @@ const WorkTimeline = () => (
   <div className="timeline">
     <ul>
       <li>
-        <div className="content">
+        <div className="content selected-job">
           <h3 className="">Junior Desktop Engineer/ Web Developer</h3>
           <p>Lorem ipsum dolor sit amet.</p>
         </div>

@@ -6,7 +6,7 @@ const Work = () => (
   <div className="aboutme__work__container">
     <div className="aboutme__work__jobsummary">
       <h1 className="aboutme__work__title">Job Summary</h1>
-      <p>
+      <p className="aboutme__work__summary">
         My first professional work on development was during in my internship.
         It only takes a small portion of our internship time since the original
         position I am hired for was Junior Desktop Engineer. We are asked to

@@ -5,16 +5,21 @@ $blue: #1089ff;
 
 .home {
   padding-top: 6rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  justify-content: center;
+  align-items: center;
   .home__content {
     margin: 4rem 0 0 6rem;
-    width: 60vw;
+    width: 50vw;
     .home__greetings {
       font-size: 4.5rem;
       color: $black;
     }
     .home__message {
       margin: 2rem 0 3rem 0;
-      font-size: 2rem;
+      font-size: 1.75rem;
       text-align: justify;
     }
     .home__btn {
@@ -55,5 +60,9 @@ $blue: #1089ff;
       color: white;
       background: $black;
     }
+  }
+  .home__illustration {
+    margin-top: 3rem;
+    width: 40vw;
   }
 }
